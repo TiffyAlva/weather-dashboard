@@ -9,78 +9,126 @@
     <link rel="stylesheet" href="./assets/style.css"/>
   </head>
 
+  
   <body>
     <section class="hero">
-     <div class="hero-body">
-     <div class="container">
-       <h1 class="title">Weather Dashboard</h1>  
-     </div>   
-     </div>   
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Weather Dashboard</h1>
+        </div>
+      </div>
     </section>
 
-    <section id="information">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-one-quarter content">
-              <!--Searching a city-->
-              <form>
-                <input id="city-input"
+    <section id="info-section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-quarter content">
+            <!--Searching a City-->
+            <h4><strong>Search for a City:</strong></h4>
+            <form>
+              <input
+                id="city-input"
                 class="input is-info"
                 type="text"
-                placeholder="Enter the name of a city"/>
-                <button id="submit" class="button is info" type="sumbit">
-                    Get Weather
-                </button>
-            </form> 
-            <!--Search city history-->
+                placeholder="Enter the name of a city"
+              />
+              <button id="submit" class="button is-info" type="submit">
+                Search
+              </button>
+            </form>
+            <!-- Search city history -->
             <div class="box table-box">
               <div class="table-container">
                 <table id="cityList" class="table is-bordered">
-                  <tr></tr>
-                  <!--Generate in JavaScript?-->
+                  <!-- list group & put table data generated in javascript? -->
                 </table>
-                <button id="clearBtn" class="button is-danger"> Clear </button>
+                <button id="clearBtn" class="button is-danger">CLEAR HISTORY</button>
+              </div>
+            </div>
+          </div>
+                  
 
-
+          <!-- Data return from JQuery? -->
+          <div class="column">
+            <div id="current-weather-data" class="columns box content">
+              <div class="column current-city-data">
+                <h2 id="city-name"></h2>
+                <h4 id="city-condition"></h4>
+                <h4 id="temperature"></h4>
+                <h4 id="high"></h4>
+                <h4 id="humidity"></h4>
+                <h4 id="wind-speed"></h4>
+                <h4 id="uv-index"></h4>
+              </div>
+              <div class="column">
+                <div id="icon"></div>
+              </div>
+            </div>
+            <!-- Forecast cards and add for JavaScript -->
+            <div class="container">
+              <div class="content">
+                <h2>5-Day Forecast:</h2>
+                <div class="columns">
+                  <div class="column card">
+                    <!--Day 1-->
+                    <div id="day1" class="card-content">
+                      <h3 id="date1" class="has-text-white"></h3>
+                      <div id="icon1"></div>
+                      <h4 id="temp1" class="has-text-white"></h4>
+                      <h4 id="hum1" class="has-text-white"></h4>
+                    </div>
+                  </div>
+                  <div class="column card">
+                    <!--Day 2-->
+                    <div id="day2" class="card-content">
+                      <h3 id="date2" class="has-text-white"></h3>
+                      <div id="icon2"></div>
+                      <h4 id="temp2" class="has-text-white"></h4>
+                      <h4 id="hum2" class="has-text-white"></h4>
+                    </div>
+                  </div>
+                  <div class="column card">
+                    <!--Day 3-->
+                    <div id="day3" class="card-content">
+                      <h3 id="date3" class="has-text-white"></h3>
+                      <div id="icon3"></div>
+                      <h4 id="temp3" class="has-text-white"></h4>
+                      <h4 id="hum3" class="has-text-white"></h4>
+                    </div>
+                  </div>
+                  <div class="column card">
+                    <!--Day 4-->
+                    <div id="day4" class="card-content">
+                      <h3 id="date4" class="has-text-white"></h3>
+                      <div id="icon4"></div>
+                      <h4 id="temp4" class="has-text-white"></h4>
+                      <h4 id="hum4" class="has-text-white"></h4>
+                    </div>
+                  </div>
+                  <div class="column card">
+                    <!--Day 5-->
+                    <div id="day5" class="card-content">
+                      <h3 id="date5" class="has-text-white"></h3>
+                      <div id="icon5"></div>
+                      <h4 id="temp5" class="has-text-white"></h4>
+                      <h4 id="hum5" class="has-text-white"></h4>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!--Data return from Query?-->
-      <div class="column">
-        <div id="weather-data" class="columns box content">
-          <div class="column current-city-data">
-            <h2 id="city name">City name</h2>
-            <h4 id="city conditions">City conditions</h4>
-            <h4 id="current temp">Current temp</h4>
-            <h4 id="high">High</h4>
-            <h4 id="humidity">Humidity</h4>
-            <h4 id="wind speed">Wind speed</h4>
-            <h4 id="uv index"> UV index</h4>
-
-            <div class="column">
-              <div id="icon"></div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Forecast-->
-
-
-
-
-            
-
-
-
-
-          
-
     </section>
 
+    <!--use Open Weather Map API-->
+    <!--I used Bulma Doc.-->
+    <!--I wanna use icons for Forecast card-->
+    <!--Use localStorage-->
+
+
+
   </body>
-</html>
+  </html>
+
