@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Dashboard</title>
+    <!--Bootstrap CSS CDN but Testing-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="./assets/style.css"/>
+  </head>
+
+  <body>
+    <section class="hero">
+     <div class="hero-body">
+     <div class="container">
+       <h1 class="title">Weather Dashboard</h1>  
+     </div>   
+     </div>   
+    </section>
+
+    <section id="information">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-quarter content">
+              <!--Searching a city-->
+              <form>
+                <input id="city-input"
+                class="input is-info"
+                type="text"
+                placeholder="Enter the name of a city"/>
+                <button id="submit" class="button is info" type="sumbit">
+                    Get Weather
+                </button>
+            </form> 
+            <!--Search city history-->
+            <div class="box table-box">
+              <div class="table-container">
+                <table id="cityList" class="table is-bordered">
+                  <tr></tr>
+                  <!--Generate in JavaScript?-->
+                </table>
+                <button id="clearBtn" class="button is-danger"> Clear </button>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Data return from Query?-->
+      <div class="column">
+        <div id="weather-data" class="columns box content">
+          <div class="column current-city-data">
+            <h2 id="city name">City name</h2>
+            <h4 id="city conditions">City conditions</h4>
+            <h4 id="current temp">Current temp</h4>
+            <h4 id="high">High</h4>
+            <h4 id="humidity">Humidity</h4>
+            <h4 id="wind speed">Wind speed</h4>
+            <h4 id="uv index"> UV index</h4>
+
+            <div class="column">
+              <div id="icon"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Forecast-->
+
+
+
+
+            
+
+
+
+
+          
+
+    </section>
+
+  </body>
+</html>
