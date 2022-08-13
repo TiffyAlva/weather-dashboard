@@ -33,18 +33,36 @@
 
   #clearBtn {
     background-color: teal;
+    
   }
   
   
   #current-weather-data {
-    background-color: teal;
+    background-image: url(./image/Sky-background.webp);
   }
-  
+    
   .current-city-data {
     min-height: 300px;
   }
   
- 
+  
+ .content h2  {
+  color: black;
+  font-weight: 700;
+  
+}
+
+.content h4 {
+  color: black;
+}
+
+
+strong {
+  color: black;
+  font-weight: 700;
+  font-size: larger;
+  
+}
   
   .card { /*5-day forcast card*/
     background-color: teal;

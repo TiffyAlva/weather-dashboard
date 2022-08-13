@@ -60,7 +60,8 @@ function searchCity (event) {
 
 submitBtn.addEventListener("click", searchCity)
 
-//* I was able to finish from line 46 to line 50
-//* I need to display search history list
-//* 5-day forecast that displays & shows current/future conditions
-//* FOLLOW Acceptance Criteria
+// I was able to finish from line 46 to line 50
+// Add date next to city and add cloud icons
+// I need to display search history list
+// 5-day forecast that displays & shows current/future conditions and dates
+// FOLLOW Acceptance Criteria
