@@ -1,0 +1,92 @@
+#info-section {
+    padding-top: 15px;
+  }
+
+  .hero .hero-body {
+    background: black;
+    padding: 20px 10px
+  
+  }
+
+  .title {
+    color: #fff;
+    text-align: center;
+  }
+
+  
+  #submit {
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    border-color: black ;
+  }
+
+  .table-box {
+    background-color: black;
+    padding: 10px;
+  }
+
+  .is-info.input {
+    border-color: black;
+  }
+
+  #clearBtn {
+    background-color: teal;
+    
+  }
+  
+  
+  #current-weather-data {
+    background-image: url(./image/Sky-background.webp);
+  }
+    
+  .current-city-data {
+    min-height: 300px;
+  }
+  
+  
+ .content h2  {
+  color: black;
+  font-weight: 700;
+  
+}
+
+.content h4 {
+  color: black;
+}
+
+
+strong {
+  color: black;
+  font-weight: 700;
+  font-size: larger;
+  
+}
+  
+  .card { /*5-day forcast card*/
+    background-color: teal;
+    margin: 3px;
+    min-height: 300px;
+  }
+  
+  
+  
+  @media only screen and (max-width: 599px) {
+  
+    .column {
+      margin: 2px;
+      padding: 0 20px 0 20px;
+    }
+  
+    .card-content {
+      padding: 20px;
+    }
+  }
+   
+
+
+
+
+
+
