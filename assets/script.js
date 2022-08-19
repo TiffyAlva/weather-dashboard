@@ -1,3 +1,4 @@
+// API KEY
 var apiKey = "843fa40ad68a96668befb0da86d9b44b";
 var cityInput = document.querySelector ("#city-input")
 var submitBtn = document.querySelector ("#submit");
@@ -21,6 +22,7 @@ function getCurrentWeather (lat, lon){
     })
 }
 
+// Coordinates
 function getCoordinates () {
     var url = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName +"&appid=" + apiKey;
 
