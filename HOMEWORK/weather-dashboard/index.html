@@ -40,7 +40,7 @@
             <div class="box table-box">
               <div class="table-container">
                 <table id="cityList" class="table is-bordered">
-                  <!-- list group & put table data generated in javascript? -->
+                  <!-- list group & put table data generated in javascript -->
                 </table>
                 <button id="clearBtn" class="button is-danger">CLEAR HISTORY</button>
               </div>
@@ -48,12 +48,13 @@
           </div>
                   
 
-          <!-- Data return from JQuery? -->
+          <!-- Data return from JQuery -->
           <div class="column">
             <div id="current-weather-data" class="columns box content">
               <div class="column current-city-data">
                 <h2 id="city-name"></h2>
                 <h2 id="today-date"></h2>
+                <img id="icon" alt="">
                 <h4 id="temperature"></h4>
                 <h4 id="wind-speed"></h4>
                 <h4 id="humidity"></h4>
@@ -63,7 +64,7 @@
                 <div id="icon"></div>
               </div>
             </div>
-            <!-- Forecast cards and add for JavaScript -->
+            <!-- Forecast cards -->
             <div class="container">
               <div class="content">
                 <h2>5-Day Forecast:</h2>
@@ -72,45 +73,50 @@
                     <!--Day 1-->
                     <div id="day1" class="card-content">
                       <h3 id="date1" class="has-text-white"></h3>
-                      <div id="icon1"></div>
+                      <img id="icon1"></img>
                       <h4 id="temp1" class="has-text-white"></h4>
                       <h4 id="hum1" class="has-text-white"></h4>
+                      <h4 id="wind1" class="has-text-white"></h4>
                     </div>
                   </div>
                   <div class="column card">
                     <!--Day 2-->
                     <div id="day2" class="card-content">
                       <h3 id="date2" class="has-text-white"></h3>
-                      <div id="icon2"></div>
+                      <img id="icon2"></img>
                       <h4 id="temp2" class="has-text-white"></h4>
                       <h4 id="hum2" class="has-text-white"></h4>
+                      <h4 id="wind2" class="has-text-white"></h4>
                     </div>
                   </div>
                   <div class="column card">
                     <!--Day 3-->
                     <div id="day3" class="card-content">
                       <h3 id="date3" class="has-text-white"></h3>
-                      <div id="icon3"></div>
+                      <img id="icon3"></img>
                       <h4 id="temp3" class="has-text-white"></h4>
                       <h4 id="hum3" class="has-text-white"></h4>
+                      <h4 id="wind3" class="has-text-white"></h4>
                     </div>
                   </div>
                   <div class="column card">
                     <!--Day 4-->
                     <div id="day4" class="card-content">
                       <h3 id="date4" class="has-text-white"></h3>
-                      <div id="icon4"></div>
+                      <img id="icon4"></img>
                       <h4 id="temp4" class="has-text-white"></h4>
                       <h4 id="hum4" class="has-text-white"></h4>
+                      <h4 id="wind4" class="has-text-white"></h4>
                     </div>
                   </div>
                   <div class="column card">
                     <!--Day 5-->
                     <div id="day5" class="card-content">
                       <h3 id="date5" class="has-text-white"></h3>
-                      <div id="icon5"></div>
+                      <img id="icon5"></img>
                       <h4 id="temp5" class="has-text-white"></h4>
                       <h4 id="hum5" class="has-text-white"></h4>
+                      <h4 id="wind5" class="has-text-white"></h4>
                     </div>
                   </div>
                 </div>
@@ -125,8 +131,8 @@
     <!--I used Bulma Doc.-->
     <!--I wanna use icons for Forecast card-->
     <!--Use localStorage-->
-
-<script src="./assets/script.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="./assets/script.js"></script>
 
   </body>
   </html>
