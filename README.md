@@ -1,6 +1,6 @@
 # Weather-Dashboard
 
-### Deployed Link: https://tiffyalva.github.io/weather-dashboard/
+### Deployed Link: https://tiffyalva.github.io/weather-dashboard-challenge-6/
 
 
 ## Module 6 Challenge
