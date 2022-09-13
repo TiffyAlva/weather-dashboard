@@ -3,7 +3,6 @@
 ### Deployed Link: https://tiffyalva.github.io/weather-dashboard-challenge-6/
 
 
-## Module 6 Challenge
 ## About:
 - For traveler, it is presented with current and future conditions for that city.
 - It shows a 5-day forecast that are display, the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity.
@@ -14,8 +13,26 @@
 
  
 
-## User Story & Acceptance Criteria:
-![](./assets/image/User%20Story-Acceptance%20Criteria.jpg)
+## User Story:
+
+<pre>AS A traveler
+I WANT to see the weather outlook for multiple cities
+SO THAT I can plan a trip accordingl</pre>
+
+## Acceptance Criteria:
+
+<pre><b>GIVEN</b> a weather dashboard with form inputs
+<b>WHEN</b> I search for a city
+<b>THEN</b> I am presented with current and future conditions for that city and that city is added to the search history
+<b>WHEN</b> I view current weather conditions for that city
+<b>THEN</b> I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+<b>WHEN</b> I view the UV index
+<b>THEN</b> I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+<b>WHEN</b> I view future weather conditions for that city
+<b>THEN</b> I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+<b>WHEN</b> I click on a city in the search history
+<b>THEN</b> I am again presented with current and future conditions for that city</pre>
+
 
 ### Missing from acceptance criteria: 
 - localStorage
