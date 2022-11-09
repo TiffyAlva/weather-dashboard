@@ -24,7 +24,7 @@ function getCurrentWeather (lat, lon){
 
 // Coordinates
 function getCoordinates () {
-    var url = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName +"&appid=" + apiKey;
+    var url = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName +"&appid=" + apiKey;
 
     fetch(url)
     .then(res => res.json())
@@ -62,7 +62,7 @@ function displayCurrentWeather (data) {
     uvIndexH4.textContent = "UV Index: " + data.current.uvi
 
     var icon = document.querySelector("#icon")
-    icon.src = "http://openweathermap.org/img/wn/"+ data.current.weather[0].icon +"@2x.png"
+    icon.src = "https://openweathermap.org/img/wn/"+ data.current.weather[0].icon +"@2x.png"
 }
 
 // 5-day forcast
@@ -82,16 +82,30 @@ function displayForecast (data,index) {
     windSpeedH4.textContent = "Wind: " + data.daily[index].wind_speed
 
     var icon = document.querySelector("#icon" + (index + 1))
-    icon.src = "http://openweathermap.org/img/wn/"+ data.daily[index].weather[0].icon +"@2x.png"
+    icon.src = "https://openweathermap.org/img/wn/"+ data.daily[index].weather[0].icon +"@2x.png"
 }
 
 // Search Cities
 function searchCity (event) {
     event.preventDefault();
     cityName = cityInput.value;
+    storeData(cityName)
     getCoordinates();
+}
+
+//Local storage
+function storeData(cityName){
+    localStorage.setItem("city", cityName)
+}
+
+function loadData(){
+    var saveData = localStorage.getItem("city")
+    var btn = document.createElement("button")
+    btn.textContent = saveData
+    document.querySelector("#cityList").append(btn)
 }
 
 submitBtn.addEventListener("click", searchCity)
 
 
+loadData()
