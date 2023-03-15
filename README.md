@@ -2,7 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8aba176d-bb5e-43ef-a57f-e862725272dd/deploy-status)](https://app.netlify.com/sites/weather-dashboard-818b80/deploys)
 
-### Netlify Link: <a href="weather-dashboard-818b80.netlify.app"> weather-dashboard-818b80.netlify.app </a>
+### Netlify Link: 
+weather-dashboard-818b80.netlify.app
 
 
 ## About:
